@@ -4,6 +4,7 @@
     --color-primary: #141922;
     --color-primary-dark: #080B12;
     --color-secondary: black;
+    --color-secondary-light: #6D6D6D;
     --color-tertiary: #282828; 
 }
 
@@ -16,6 +17,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: white;
+    font-weight: bold;
 }
 
 .container-app {
@@ -51,10 +53,10 @@ body {
 
 .sidebar {
     width: 180px;
-    padding: 1rem;
-    color: grey;
+    padding: 0.5rem 1rem;
+    color: var(--color-secondary-light);
     font-size: 0.6rem;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
 }
 
 .top-bar {
@@ -67,13 +69,14 @@ body {
 }
 
 .sidebar-logo {
-    height: 64px;
-    width: 70%;
+    height: calc(80px - 0.5rem);
+    width: 75%;
+    padding: 0.6rem 0;
 }
 
 .sidebar li {
     list-style: none;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
 }
 
 .menu li img, .sidebar-user img {
@@ -90,7 +93,6 @@ body {
 
 .playlist, .user {
     color: white;
-    font-weight: bold;
     padding-top: 0.3rem;
     font-size: 0.7rem
 }
@@ -102,7 +104,8 @@ body {
 }
 
 .download-app {
-    margin-bottom: 0.3rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--color-secondary-light);
 }
 
 .download-app img {
@@ -112,11 +115,15 @@ body {
 }
 
 .user img {
-    background-color: grey;
+    background-color: var(--color-secondary-light);
     border-radius: 50%;
     vertical-align: middle;
     margin-right: 0.3rem;
     aspect-ratio: 1;
+}
+
+.user {
+    padding-top: 0.7rem;
 }
 
 .bg-sidebar {

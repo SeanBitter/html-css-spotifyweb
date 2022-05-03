@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -17,18 +18,59 @@
         <div class="display-flex flex-grow flex-stretch">
 
             <!-- sidebar -->
-            <div class="sidebar flex-shrink bg-sidebar">
+            <div class="sidebar display-flex flex-column flex-shrink bg-sidebar">
 
-                <div class="sidebar-menu">
+                <div class="sidebar-menu flex-shrink">
                     <div class="sidebar-logo">
                         <img src="img/logo.svg" alt="">
                     </div>
-                    <div class="menu"></div>
+                    <div class="menu">
+                        <ul>
+                            <li class="display-flex align">
+                                <img src="img/home.svg" alt="Home">
+                                <div class="menu-list">Home</div>
+                            </li>
+                            <li class="display-flex align">
+                                <img src="img/search.svg" alt="Cerca">
+                                <div class="menu-list">Cerca</div>
+                            </li>
+                            <li class="display-flex align">
+                                <img src="img/libreria.svg" alt="Libreria">
+                                <div class="menu-list">La tua libreria</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="sidebar-playlist"></div>
+                <div class="sidebar-playlist display-flex flex-grow">
+                    <div class="playlist-section display-flex flex-column">
+                        <div>
+                            <div class="flex-shrink playlist">PLAYLIST</div>
+                            <i class="fa-solid fa-square-plus"></i> Crea Playlist
+                        </div>
+                        <div class="overflow-auto">
+                            <ul>
+                                <li>Nome playlist</li>
+                                <li>Nome playlist</li>
+                                <li>Nome playlist</li>
+                                <li>Nome playlist</li>
+                                <li>Nome playlist</li>
+                                <li>Nome playlist</li>
+                                <li>Nome playlist</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="sidebar-user"></div>
+                <div class="sidebar-user flex-shrink">
+                    <div class="download-app">
+                        <img src="img/download.svg" alt="Download Spotify">Installa app
+                    </div>
+                    <hr>
+                    <div class="user">
+                        <img src="img/profile.svg" alt="User">Paolo
+                    </div>
+                </div>
             </div>
 
             <!-- contenuto principale-->

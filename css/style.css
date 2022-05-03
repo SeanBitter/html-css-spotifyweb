@@ -32,6 +32,11 @@ body {
     overflow: hidden;
 }
 
+.overflow-auto {
+    flex-grow: 1;
+    overflow: auto;
+}
+
 .flex-shrink {
     flex-shrink: 0;
 }
@@ -45,11 +50,16 @@ body {
 }
 
 .sidebar {
-    width: 200px;
+    width: 180px;
+    padding: 1rem;
+    color: grey;
+    font-size: 0.6rem;
+    line-height: 1.2rem;
 }
 
 .top-bar {
     padding: 1rem 0;
+    height: 80px;
 }
 
 .player-container {
@@ -57,7 +67,56 @@ body {
 }
 
 .sidebar-logo {
-    height: 100px;
+    height: 64px;
+    width: 70%;
+}
+
+.sidebar li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+}
+
+.menu li img, .sidebar-user img {
+    width: 15%;
+}
+
+.menu-list {
+    padding-left: 0.5rem;
+}
+
+.align {
+    align-items: center;
+}
+
+.playlist, .user {
+    color: white;
+    font-weight: bold;
+    padding-top: 0.3rem;
+    font-size: 0.7rem
+}
+
+.fa-square-plus {
+    font-size: 2rem;
+    vertical-align: middle;
+    padding: 0.3rem 0.3rem 0.6rem 0;
+}
+
+.download-app {
+    margin-bottom: 0.3rem;
+}
+
+.download-app img {
+    margin-right: 0.3rem;
+    vertical-align: middle;
+    width: 10%;
+}
+
+.user img {
+    background-color: grey;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+    aspect-ratio: 1;
 }
 
 .bg-sidebar {

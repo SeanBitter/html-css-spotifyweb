@@ -9,9 +9,40 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
     <!-- Contenitore app -->
-    <div class="container-app">
-        
+    <div class="container-app flex-column">
+
+        <!-- Blocco in grow -->
+        <div class="display-flex flex-grow flex-stretch">
+
+            <!-- sidebar -->
+            <div class="sidebar flex-shrink bg-sidebar">
+
+                <div class="sidebar-menu">
+                    <div class="sidebar-logo">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <div class="menu"></div>
+                </div>
+
+                <div class="sidebar-playlist"></div>
+
+                <div class="sidebar-user"></div>
+            </div>
+
+            <!-- contenuto principale-->
+            <div class="main-content display-flex flex-grow flex-column">
+                <!-- barra in alto - upgrade -->
+                <div class="top-bar flex-shrink bg-top-bar"></div>
+
+                <!-- contenuto con cards -->
+                <div class="flex-grow bg-main"></div>
+            </div>
+        </div>
+
+        <!-- blocco sotto col player -->
+        <div class="player-container flex-shrink bg-bottom-bar"></div>
     </div>
 
 </body>

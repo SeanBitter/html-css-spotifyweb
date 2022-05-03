@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+:root {
+    --color-primary: #141922;
+    --color-primary-dark: #080B12;
+    --color-secondary: black;
+    --color-tertiary: #282828; 
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,8 +15,63 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 .container-app {
     height: 100vh;
+    display: flex;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-grow {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.flex-shrink {
+    flex-shrink: 0;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-stretch {
+    align-items: stretch;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.top-bar {
+    padding: 1rem 0;
+}
+
+.player-container {
+    padding: 1rem 0;
+}
+
+.sidebar-logo {
+    height: 100px;
+}
+
+.bg-sidebar {
+    background-color: var(--color-secondary);
+}
+
+.bg-bottom-bar {
+    background-color: var(--color-tertiary);
+}
+
+.bg-top-bar {
+    background-color: var(--color-primary-dark);
+}
+
+.bg-main {
+    background-color: var(--color-primary);
 }

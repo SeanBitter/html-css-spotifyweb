@@ -61,7 +61,7 @@ body {
 
 .top-bar {
     padding: 1rem 0;
-    height: 80px;
+    height: 75px;
 }
 
 .player-container {
@@ -69,7 +69,7 @@ body {
 }
 
 .sidebar-logo {
-    height: calc(80px - 0.5rem);
+    height: calc(75px - 0.5rem);
     width: 75%;
     padding: 0.6rem 0;
 }
@@ -124,6 +124,21 @@ body {
 
 .user {
     padding-top: 0.7rem;
+}
+
+button {
+    border-radius: 20px;
+    background-color: var(--color-primary-dark);
+    border: 1px solid white;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.button {
+    float: right;
+    margin-right: 0.5rem;
 }
 
 .bg-sidebar {

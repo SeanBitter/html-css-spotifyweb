@@ -34,7 +34,7 @@ body {
     overflow: hidden;
 }
 
-.overflow-auto {
+.flex-grow-over-auto {
     flex-grow: 1;
     overflow: auto;
 }
@@ -63,6 +63,10 @@ body {
     gap: 1rem;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .sidebar {
     width: 180px;
     padding: 0.5rem 1rem;
@@ -74,6 +78,9 @@ body {
 .top-bar {
     padding: 1rem 0;
     height: 75px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
 }
 
 .player-container {
@@ -83,7 +90,7 @@ body {
 }
 
 .player-album, .player-volume {
-    max-width: 220px;
+    max-width: 200px;
     width: 25%;
 }
 
@@ -93,10 +100,15 @@ body {
 
 .player-album-cover {
     height: 100%;
+    padding: 0.5rem 0;
 }
 
 .player-album-cover img {
     height: 100%;
+}
+
+.player-album-name {
+    font-size: 0.8rem;
 }
 
 .player-volume {
@@ -156,10 +168,6 @@ body {
     padding-left: 0.5rem;
 }
 
-.align {
-    align-items: center;
-}
-
 .playlist, .user {
     color: white;
     padding-top: 0.3rem;
@@ -196,6 +204,63 @@ body {
     padding-top: 0.7rem;
 }
 
+.nav-bar div {
+    padding: 1rem;
+}
+
+.nav-bar div a {
+    text-decoration: none;
+    color: var(--color-secondary-light);
+}
+
+.main-content {
+    padding: 1rem;
+}
+
+.row {
+    flex-basis: 0;
+}
+
+.subtitle {
+    padding-top: 0.5rem;
+}
+
+.cards-section {
+    padding-bottom: 2rem;
+}
+
+.card {
+    width: calc(100% / 6 - 1rem);
+    padding-top: 1.5rem;
+}
+
+.card-img {
+    max-width: 200px;
+    aspect-ratio: 1;
+}
+
+.card-img img {
+    max-height: 100%;
+}
+
+.card-text {
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.card-text-title {
+    padding: 0.3rem 0;
+}
+
+.main {
+    font-size: 0.6rem;
+}
+
+.round img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 button {
     border-radius: 20px;
     background-color: var(--color-primary-dark);
@@ -221,6 +286,7 @@ button {
 
 .bg-top-bar {
     background-color: var(--color-primary-dark);
+    opacity: 0.5;
 }
 
 .bg-main {

@@ -86,7 +86,51 @@
         </div>
 
         <!-- blocco sotto col player -->
-        <div class="player-container flex-shrink bg-bottom-bar"></div>
+        <div class="player-container flex-shrink bg-bottom-bar display-flex">
+
+            <div class="player-album display-flex flex-shrink justify-center flex-align gap">
+                <div class="player-album-cover">
+                    <img src="img/sinister.jpeg" alt="">
+                </div>
+                <div class="player-album-name">
+                    <h5>Sinister</h5>
+                    <h6 class="color-grey">Brano nome</h6>
+                </div>
+                <div class="player-album-icons">
+                    <i class="fa-regular fa-heart color-grey"></i>
+                    <i class="fa-regular fa-folder color-grey"></i>
+                </div>
+            </div>
+
+            <div class="player-time display-flex flex-column flex-grow">
+                <div class="player-time-icons display-flex justify-center flex-align gap">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="player-time-bar display-flex justify-center flex-align">
+                    <div class="player-time-min">1.22</div>
+                    <div class="player-volume-bar">
+                        <div class="player-volume-bar-progress"></div>
+                    </div>
+                    <div class="player-time-min">4.35</div>
+                </div>
+            </div>
+
+            <div class="player-volume display-flex flex-shrink flex-align">
+                <div class="player-volume-icons display-flex gap">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="player-volume-bar">
+                    <div class="player-volume-bar-progress"></div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </body>

@@ -51,6 +51,18 @@ body {
     align-items: stretch;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
+.flex-align {
+    align-items: center;
+}
+
+.gap {
+    gap: 1rem;
+}
+
 .sidebar {
     width: 180px;
     padding: 0.5rem 1rem;
@@ -65,7 +77,63 @@ body {
 }
 
 .player-container {
-    padding: 1rem 0;
+    padding: 0.8rem 0rem;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.player-album, .player-volume {
+    max-width: 220px;
+    width: 25%;
+}
+
+.player-time {
+    width: 50%;
+}
+
+.player-album-cover {
+    height: 100%;
+}
+
+.player-album-cover img {
+    height: 100%;
+}
+
+.player-volume {
+    justify-content: flex-end;
+}
+
+.player-volume-bar {
+    height: 4px;
+    border-radius: 5px;
+    width: 40%;
+    background-color: grey;
+    margin: 0.3rem 0.5rem;
+}
+
+.player-volume-bar-progress {
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.player-container .fa-regular, .fa-solid, .player-time-bar {
+    font-size: 0.8rem;
+}
+
+.player-time-icons .fa-solid {
+    font-size: 1rem;
+}
+
+.player-time-icons .fa-regular {
+    font-size: 1.7rem;
+    margin: 0.3rem 0.8rem;
+}
+
+.player-time-min {
+    padding: 0.2rem 1rem;
+    font-size: 0.6rem;
 }
 
 .sidebar-logo {
@@ -81,6 +149,7 @@ body {
 
 .menu li img, .sidebar-user img {
     width: 15%;
+    opacity: 0.5;
 }
 
 .menu-list {
@@ -120,6 +189,7 @@ body {
     vertical-align: middle;
     margin-right: 0.3rem;
     aspect-ratio: 1;
+    opacity: 1;
 }
 
 .user {
@@ -155,4 +225,9 @@ button {
 
 .bg-main {
     background-color: var(--color-primary);
+}
+
+.color-grey {
+    color: var(--color-secondary-light);
+    padding-right: 0.3rem;
 }

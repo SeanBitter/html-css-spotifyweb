@@ -20,6 +20,10 @@ body {
     font-weight: bold;
 }
 
+a div {
+    display: inline-block;
+}
+
 .container-app {
     height: 100vh;
     display: flex;
@@ -89,6 +93,11 @@ body {
     height: 80px;
 }
 
+.player-container a {
+    text-decoration: none;
+    color: white;
+}
+
 .player-album, .player-volume {
     max-width: 200px;
     width: 25%;
@@ -111,6 +120,16 @@ body {
     font-size: 0.8rem;
 }
 
+.song-name:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fa-heart:hover, .fa-folder:hover {
+    color: white;
+}
+
 .player-volume {
     justify-content: flex-end;
 }
@@ -119,8 +138,9 @@ body {
     height: 4px;
     border-radius: 5px;
     width: 40%;
-    background-color: grey;
+    background-color: var(--color-secondary-light);
     margin: 0.3rem 0.5rem;
+    cursor: pointer;
 }
 
 .player-volume-bar-progress {
@@ -128,6 +148,24 @@ body {
     height: 100%;
     border-radius: 5px;
     background-color: white;
+}
+
+.bar-progress-circle {
+    display: none;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: right;
+    margin-top: -0.2rem;
+}
+
+.player-volume-bar:hover .bar-progress-circle {
+    display: block;
+}
+
+.player-volume-bar:hover .player-volume-bar-progress {
+    background-color: #87C52C;
 }
 
 .player-container .fa-regular, .fa-solid, .player-time-bar {
@@ -166,6 +204,11 @@ body {
 
 .menu-list {
     padding-left: 0.5rem;
+}
+
+.sidebar a, .player-album-icons a {
+    text-decoration: none;
+    color: var(--color-secondary-light);
 }
 
 .playlist, .user {
@@ -213,6 +256,10 @@ body {
     color: var(--color-secondary-light);
 }
 
+.nav-bar a:hover {
+    color: white;
+}
+
 .main-content {
     padding: 1rem;
 }
@@ -250,6 +297,7 @@ body {
 
 .card-text-title {
     padding: 0.3rem 0;
+    cursor: pointer;
 }
 
 .main {
@@ -269,11 +317,16 @@ button {
     color: white;
     font-size: 0.7rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .button {
     float: right;
     margin-right: 0.5rem;
+}
+
+.button button:hover, .fa-circle-play:hover {
+    transform: scale(1.1);
 }
 
 .bg-sidebar {
@@ -296,4 +349,27 @@ button {
 .color-grey {
     color: var(--color-secondary-light);
     padding-right: 0.3rem;
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: calc(100% / 4 - 1rem);
+    }
+
+    .player-album-cover {
+        padding-left: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: calc(100% / 2 - 1rem);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .player-album-cover {
+        height: 75%;
+    }
 }

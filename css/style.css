@@ -20,10 +20,6 @@ body {
     font-weight: bold;
 }
 
-a div {
-    display: inline-block;
-}
-
 .container-app {
     height: 100vh;
     display: flex;
@@ -128,6 +124,14 @@ a div {
 
 .fa-heart:hover, .fa-folder:hover, .sidebar a:hover {
     color: white;
+}
+
+.menu li:hover .menu-list {
+    color: white;
+}
+
+.menu li:hover .menu-icon, .menu-list {
+    opacity: 1;
 }
 
 .player-volume {
@@ -291,6 +295,29 @@ a div {
     max-height: 100%;
 }
 
+.card-img {
+    position: relative;
+}
+
+.card-img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.hover-card {
+    position: absolute;
+    font-size: 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: none;
+}
+
+.card-img:hover .hover-card {
+    display: block;
+}
+
 .card-text {
     text-align: center;
     padding-top: 0.5rem;
@@ -326,7 +353,7 @@ button {
     padding: 0 0.5rem;
 }
 
-.button button:hover, .fa-circle-play:hover {
+.button button:hover, .player-bottom-bar:hover {
     transform: scale(1.1);
 }
 

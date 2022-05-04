@@ -126,7 +126,7 @@ a div {
     cursor: pointer;
 }
 
-.fa-heart:hover, .fa-folder:hover {
+.fa-heart:hover, .fa-folder:hover, .sidebar a:hover {
     color: white;
 }
 
@@ -248,12 +248,13 @@ a div {
 }
 
 .nav-bar div {
-    padding: 1rem;
+    padding: 1rem 0.7rem;
 }
 
 .nav-bar div a {
     text-decoration: none;
     color: var(--color-secondary-light);
+
 }
 
 .nav-bar a:hover {
@@ -322,7 +323,7 @@ button {
 
 .button {
     float: right;
-    margin-right: 0.5rem;
+    padding: 0 0.5rem;
 }
 
 .button button:hover, .fa-circle-play:hover {

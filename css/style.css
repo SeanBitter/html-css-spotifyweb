@@ -3,6 +3,7 @@
 :root {
     --color-primary: #141922;
     --color-primary-dark: #080B12;
+    --color-primary-dark-transparent: #080b1290;
     --color-secondary: black;
     --color-secondary-light: #6D6D6D;
     --color-tertiary: #282828; 
@@ -65,14 +66,6 @@ body {
 
 .flex-wrap {
     flex-wrap: wrap;
-}
-
-.sidebar {
-    width: 180px;
-    padding: 0.5rem 1rem;
-    color: var(--color-secondary-light);
-    font-size: 0.6rem;
-    line-height: 1.3rem;
 }
 
 .top-bar {
@@ -191,6 +184,14 @@ body {
     font-size: 0.6rem;
 }
 
+.sidebar {
+    width: 180px;
+    padding: 0.5rem 1rem;
+    color: var(--color-secondary-light);
+    font-size: 0.6rem;
+    line-height: 1.3rem;
+}
+
 .sidebar-logo {
     height: calc(75px - 0.5rem);
     width: 75%;
@@ -200,6 +201,10 @@ body {
 .sidebar li {
     list-style: none;
     padding-bottom: 0.3rem;
+}
+
+.logo-small {
+    display: none;
 }
 
 .menu li img, .sidebar-user img {
@@ -214,6 +219,14 @@ body {
 .sidebar a, .player-album-icons a {
     text-decoration: none;
     color: var(--color-secondary-light);
+}
+
+.menu-home .menu-list {
+    color: white;
+}
+
+.menu-home a .menu-icon {
+    opacity: 1;
 }
 
 .playlist, .user {
@@ -262,7 +275,7 @@ body {
 
 }
 
-.nav-bar a:hover {
+.nav-bar .relative a:hover {
     color: white;
 }
 
@@ -300,14 +313,14 @@ body {
     position: relative;
 }
 
-.card-img:hover {
+.card-img:hover .hover-card-img {
     opacity: 0.5;
     cursor: pointer;
 }
 
 .hover-card {
     position: absolute;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -338,9 +351,29 @@ body {
     overflow: hidden;
 }
 
+.relative {
+    position: relative;
+}
+
+.underline-green {
+    border-bottom: 2px solid #87C52C;
+    width: 20%;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.side-border {
+    border-left: 2px solid #87C52C;
+    height: 100%;
+    position: absolute;
+    left: -1rem;
+}
+
 button {
     border-radius: 20px;
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary-dark-transparent);
     border: 1px solid white;
     padding: 0.5rem 1.5rem;
     color: white;
@@ -367,8 +400,7 @@ button {
 }
 
 .bg-top-bar {
-    background-color: var(--color-primary-dark);
-    opacity: 0.5;
+    background-color: var(--color-primary-dark-transparent);
 }
 
 .bg-main {
@@ -400,5 +432,42 @@ button {
 @media screen and (max-width: 600px) {
     .player-album-cover {
         height: 75%;
+    }
+
+    .mobile-version-hide, .logo-big {
+        display: none;
+    }
+
+    .download-app {
+        border-bottom: 0;
+    }
+
+    .menu li img, .sidebar-user img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .download-app, .user {
+        text-align: center;
+    }
+
+    .download-app img {
+        width: 30%;
+    }
+
+    .sidebar {
+        width: 50px;
+        padding: 0.5rem 0.1rem;
+    }
+
+    .sidebar-logo {
+        height: 50px;
+        margin: auto;
+    }
+
+    .logo-small {
+        display: block;
+        width: 75%;
+        margin: auto;
     }
 }

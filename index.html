@@ -22,26 +22,28 @@
 
                 <div class="sidebar-menu flex-shrink">
                     <div class="sidebar-logo">
-                        <img src="img/logo.svg" alt="">
+                        <img src="img/logo.svg" alt="" class="logo-big">
+                        <img src="img/logo-small.svg" alt="" class="logo-small">
                     </div>
                     <div class="menu">
                         <ul>
-                            <li>
-                                <a href="#" class="display-flex align">
+                            <li class="menu-home">
+                                <a href="#" class="display-flex align relative">
                                     <img src="img/home.svg" alt="Home" class="menu-icon">
-                                    <div class="menu-list">Home</div>
+                                    <div class="menu-list mobile-version-hide">Home</div>
+                                    <div class="side-border"></div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="display-flex align">
                                     <img src="img/search.svg" alt="Cerca" class="menu-icon">
-                                    <div class="menu-list">Cerca</div>
+                                    <div class="menu-list mobile-version-hide">Cerca</div>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="display-flex align">
                                     <img src="img/libreria.svg" alt="Libreria" class="menu-icon">
-                                    <div class="menu-list">La tua libreria</div>
+                                    <div class="menu-list mobile-version-hide">La tua libreria</div>
                                 </a>
                             </li>
                         </ul>
@@ -50,11 +52,11 @@
 
                 <div class="sidebar-playlist display-flex flex-grow">
                     <div class="playlist-section display-flex flex-column">
-                        <div>
+                        <div class="mobile-version-hide">
                             <div class="flex-shrink playlist">PLAYLIST</div>
                             <a href="#"><i class="fa-solid fa-square-plus"></i> Crea Playlist</a>
                         </div>
-                        <div class="flex-grow-over-auto">
+                        <div class="flex-grow-over-auto mobile-version-hide">
                             <ul>
                                 <a href="#"><li>Nome playlist</li></a>
                                 <a href="#"><li>Nome playlist</li></a>
@@ -70,11 +72,11 @@
 
                 <div class="sidebar-user flex-shrink">
                     <div class="download-app">
-                        <a href="#"><img src="img/download.svg" alt="Download Spotify">Installa app</a>
+                        <a href="#"><img src="img/download.svg" alt="Download Spotify"><span class="mobile-version-hide">Installa app</span></a>
                     </div>
 
                     <div class="user">
-                        <img src="img/profile.svg" alt="User">Paolo
+                        <img src="img/profile.svg" alt="User"><span class="mobile-version-hide">Paolo</span></a>
                     </div>
                 </div>
             </div>
@@ -90,12 +92,15 @@
                 <div class="bg-main">
 
                     <div class="nav-bar display-flex justify-center flex-wrap">
-                        <div><a href="#">IN EVIDENZA</a></div>
-                        <div><a href="#">PODCAST</a></div>
-                        <div><a href="#">CLASSIFICHE</a></div>
-                        <div><a href="#">GENERI E MOOD</a></div>
-                        <div><a href="#">NUOVE USCITE</a></div>
-                        <div><a href="#">SCOPRI</a></div>
+                        <div class="relative">
+                            <a href="#">IN EVIDENZA</a>
+                            <div class="underline-green"></div>
+                        </div>
+                        <div class="relative"><a href="#">PODCAST</a></div>
+                        <div class="relative"><a href="#">CLASSIFICHE</a></div>
+                        <div class="relative"><a href="#">GENERI E MOOD</a></div>
+                        <div class="relative"><a href="#">NUOVE USCITE</a></div>
+                        <div class="relative"><a href="#">SCOPRI</a></div>
                     </div>
 
                     <div class="main-content">
@@ -105,8 +110,8 @@
 
                                 <div class="card">
                                     <div class="card-img">
-                                        <i class="fa-regular fa-circle-play hover-card"></i>
                                         <img src="img/metal_lifting.jpg" alt="" class="hover-card-img">
+                                        <div class="hover-card"><i class="fa-regular fa-circle-play"></i></div>
                                     </div>
                                     <div class="card-text">
                                         <h3 class="card-text-title">Heavy Metal</h3>
@@ -116,8 +121,8 @@
 
                                 <div class="card">
                                     <div class="card-img">
-                                        <i class="fa-regular fa-circle-play hover-card"></i>
                                         <img src="img/stranger.jpeg" alt="" class="hover-card-img">
+                                        <div class="hover-card"><i class="fa-regular fa-circle-play"></i></div>
                                     </div>
                                     <div class="card-text">
                                         <h3 class="card-text-title">Stranger Things, Vol. 1 (A Netflix Original Series Soundtrack)</h3>
@@ -127,8 +132,8 @@
 
                                 <div class="card">
                                     <div class="card-img">
-                                        <i class="fa-regular fa-circle-play hover-card"></i>
                                         <img src="img/aquietplace.jpeg" alt="" class="hover-card-img">
+                                        <div class="hover-card"><i class="fa-regular fa-circle-play"></i></div>
                                     </div>
                                     <div class="card-text">
                                         <h3 class="card-text-title">A Quiet Place</h3>
@@ -138,8 +143,8 @@
 
                                 <div class="card">
                                     <div class="card-img">
-                                        <i class="fa-regular fa-circle-play hover-card"></i>
                                         <img src="img/split.jpeg" alt="" class="hover-card-img">
+                                        <div class="hover-card"><i class="fa-regular fa-circle-play"></i></div>
                                     </div>
                                     <div class="card-text">
                                         <h3 class="card-text-title">Split</h3>
@@ -149,8 +154,8 @@
 
                                 <div class="card">
                                     <div class="card-img">
-                                        <i class="fa-regular fa-circle-play hover-card"></i>
                                         <img src="img/cure.jpeg" alt="" class="hover-card-img">
+                                        <div class="hover-card"><i class="fa-regular fa-circle-play"></i></div>
                                     </div>
                                     <div class="card-text">
                                         <h3 class="card-text-title">A Cure for Wellness</h3>
@@ -160,8 +165,8 @@
 
                                 <div class="card">
                                     <div class="card-img">
-                                        <i class="fa-regular fa-circle-play hover-card"></i>
                                         <img src="img/sinister.jpeg" alt="" class="hover-card-img">
+                                        <div class="hover-card"><i class="fa-regular fa-circle-play"></i></div>
                                     </div>
                                     <div class="card-text">
                                         <h3 class="card-text-title">Sinister</h3>
@@ -178,8 +183,8 @@
 
                                 <div class="card">
                                     <div class="card-img">
-                                        <i class="fa-regular fa-circle-play hover-card"></i>
                                         <img src="img/radar.jpeg" alt="" class="hover-card-img">
+                                        <div class="hover-card"><i class="fa-regular fa-circle-play"></i></div>
                                     </div>
                                     <div class="card-text">
                                         <h3 class="card-text-title">Release Radar</h3>
@@ -189,8 +194,8 @@
 
                                 <div class="card">
                                     <div class="card-img">
-                                        <i class="fa-regular fa-circle-play hover-card"></i>
                                         <img src="img/mixdaily.jpeg" alt="" class="hover-card-img">
+                                        <div class="hover-card"><i class="fa-regular fa-circle-play"></i></div>
                                     </div>
                                     <div class="card-text">
                                         <h3 class="card-text-title">Daily Mix 1</h3>
@@ -208,8 +213,8 @@
                                 <div class="card">
 
                                     <div class="card-img round">
-                                        <i class="fa-regular fa-circle-play hover-card"></i>
                                         <img src="img/youg.jpeg" alt="" class="hover-card-img">
+                                        <div class="hover-card"><i class="fa-regular fa-circle-play"></i></div>
                                     </div>
                                     <div class="card-text">
                                         <h3 class="card-text-title">Lana Del Rey</h3>
@@ -219,8 +224,8 @@
 
                                 <div class="card">
                                     <div class="card-img round">
-                                        <i class="fa-regular fa-circle-play hover-card"></i>
                                         <img src="img/einaudi.jpeg" alt="" class="hover-card-img">
+                                        <div class="hover-card"><i class="fa-regular fa-circle-play"></i></div>
                                     </div>
                                     <div class="card-text">
                                         <h3 class="card-text-title">Ludovico Einaudi</h3>

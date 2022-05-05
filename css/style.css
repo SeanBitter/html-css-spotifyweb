@@ -81,6 +81,7 @@ body {
     position: sticky;
     z-index: 1;
     top: 0;
+    overflow: hidden;
 }
 
 .player-container {
@@ -379,7 +380,7 @@ button {
     padding-right: 0.3rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
     .card {
         width: calc(100% / 4 - 1rem);
     }
@@ -389,14 +390,14 @@ button {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .card {
         width: calc(100% / 2 - 1rem);
     }
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .player-album-cover {
         height: 75%;
     }

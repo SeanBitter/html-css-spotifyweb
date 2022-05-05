@@ -1,0 +1,63 @@
+/* GLI EFFETTI HOVER
+    SONO PRESENTI NEL FILE INDEX.HTML
+    DI DEFAULT */
+
+.row {
+    overflow: auto;
+}
+
+.xs-volume-icons {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .card {
+        width: 120px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .player-album-cover {
+        display: none;
+    }
+
+    .player-container {
+        padding: 0 0.2rem;
+    }
+
+    .player-time .gap {
+        gap: 0.3rem;
+    }
+
+    .player-volume-icons .fa-bars, .player-volume-icons .fa-display {
+        display: none;
+    }
+
+    .xs-volume-icons {
+        display: inline-block;
+    }
+
+    .player-volume .gap, .player-album .gap {
+        gap: 0.2rem;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .top-bar {
+        display: none;
+    }
+}
